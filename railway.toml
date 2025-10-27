@@ -1,11 +1,8 @@
 [build]
-builder = "Nixpacks"
+builder = "herokuish"
 
 [deploy]
 startCommand = "php artisan serve --host=0.0.0.0 --port=$PORT"
-
-[build.env]
-PHP_VERSION = "8.0"
 
 [databases]
 cityhall = { database = "cityhall", sql = "./database/migrations" }

@@ -1,0 +1,3 @@
+#!/bin/bash
+install-php-extensions gd
+composer install --optimize-autoloader --no-dev
